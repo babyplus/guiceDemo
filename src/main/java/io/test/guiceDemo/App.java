@@ -6,7 +6,7 @@ package io.test.guiceDemo;
  */
 public class App {
 	public static void main(String[] args) {
-		Configuration.getMainApplet().printHelloWorld();
+		Configuration.getMainApplet().run();
 	}
 
 }
