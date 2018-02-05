@@ -1,6 +1,8 @@
 package io.test.guiceDemo.helloWorldDemo;
 
-public class HelloWorldPrinter {
+import io.test.guiceDemo.MyApplet;
+
+public class HelloWorldPrinter implements MyApplet {
 
 	private void printHelloWorld() {
 		// TODO Auto-generated method stub
