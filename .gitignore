@@ -1,0 +1,13 @@
+*~
+.classpath
+.project
+.settings
+target
+*.iml
+.idea
+bin
+target
+.DS_Store
+META-INF
+maven-metadata-local.xml
+*.log
