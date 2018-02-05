@@ -1,21 +1,19 @@
 package io.test.guiceDemo.helloWorldDemo;
 
-import java.io.PrintStream;
 
 import io.test.guiceDemo.MyApplet;
 
 public class HelloWorldPrinter implements MyApplet {
 
-	private PrintStream destination;
+	private MyDestination destination;
 
-	public HelloWorldPrinter(PrintStream destination) {
+	public HelloWorldPrinter(MyDestination destination) {
 		super();
 		this.destination = destination;
 	}
 
 	private void printHelloWorld() {
-		destination = System.out;
-		destination.println("Hello World!");
+		destination.write("Hello World!");
 	}
 
 	public void run() {
