@@ -13,7 +13,7 @@ public class PrintStreamWriter implements MyDestination{
 
 	@Override
 	public void write(String string) {
-		destination.print("hello world");
+		destination.print(string);
 	}
 
 }
