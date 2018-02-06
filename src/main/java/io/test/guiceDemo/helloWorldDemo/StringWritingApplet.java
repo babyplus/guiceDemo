@@ -1,13 +1,18 @@
 package io.test.guiceDemo.helloWorldDemo;
 
+import javax.inject.Inject;
+
+import com.google.inject.Provider;
+
 import io.test.guiceDemo.MyApplet;
 
 public class StringWritingApplet implements MyApplet {
 
 	private MyDestination destination;
-	private StringProvider stringProvider;
-
-	public StringWritingApplet(MyDestination destination, StringProvider stringProvider) {
+	private Provider<String> stringProvider;
+ 
+	@Inject
+	public StringWritingApplet(MyDestination destination, Provider<String> stringProvider) {
 		super();
 		this.destination = destination;
 		this.stringProvider = stringProvider;
