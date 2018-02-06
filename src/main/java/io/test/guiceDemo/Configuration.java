@@ -7,7 +7,7 @@ public class Configuration {
 
 	public static MyApplet getMainApplet() {
 		// TODO Auto-generated method stub
-		return new HelloWorldPrinter(new PrintStreamWriter(System.out));
+		return new HelloWorldPrinter(new PrintStreamWriter(System.out), "helloConfiguration!");
 	}
 
 }
