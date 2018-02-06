@@ -5,16 +5,16 @@ import io.test.guiceDemo.MyApplet;
 public class StringWritingApplet implements MyApplet {
 
 	private MyDestination destination;
-	private String string;
+	private StringProvider stringProvider;
 
-	public StringWritingApplet(MyDestination destination, String string) {
+	public StringWritingApplet(MyDestination destination, StringProvider stringProvider) {
 		super();
 		this.destination = destination;
-		this.string = string;
+		this.stringProvider = stringProvider;
 	}
 
 	private void printString() {
-		destination.write(string);
+		destination.write(stringProvider.get());
 	}
 
 	public void run() {
